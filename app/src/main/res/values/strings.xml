@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">proyectoFinal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ResistorImage">ResistorImage</string>
+    <string name="TextColorResistor">Push the bands of the resistor to change the color and calculate the values</string>
+    <string name="TextValueResistor">Insert the value you wish and unit for calculate the color bands of the resistor</string>
+    <string name="CampoVacio"> </string>
+    <string name="temp">temp</string>
+</resources>
