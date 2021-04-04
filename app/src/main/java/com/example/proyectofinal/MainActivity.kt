@@ -7,6 +7,7 @@ import com.example.proyectofinal.fragments.ColorResistorFragment
 import com.example.proyectofinal.fragments.ValuesResistorFragment
 import kotlinx.android.synthetic.main.activity_main.*//Se agrego en el gradle para poder importar esto
 
+//private const val TAG="Resistor"
 class MainActivity : AppCompatActivity() {
     private val colorResistor= ColorResistorFragment()
     private val valuesResistor= ValuesResistorFragment()

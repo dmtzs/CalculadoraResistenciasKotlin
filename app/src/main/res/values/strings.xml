@@ -5,6 +5,6 @@
     <string name="ResistorImage">ResistorImage</string>
     <string name="TextColorResistor">Push the bands of the resistor to change the color and calculate the values</string>
     <string name="TextValueResistor">Insert the value you wish and unit for calculate the color bands of the resistor</string>
-    <string name="CampoVacio"> </string>
+    <string name="CampoVacio"></string>
     <string name="temp">temp</string>
 </resources>
