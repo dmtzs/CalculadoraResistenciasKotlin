@@ -1,11 +1,16 @@
 package com.example.proyectofinal.fragments
 
+import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Toast
 import com.example.proyectofinal.R
 import kotlinx.android.synthetic.main.fragment_values_resistor.*
 
@@ -13,6 +18,7 @@ import kotlinx.android.synthetic.main.fragment_values_resistor.*
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
+private const val TAG="Resistor"
 
 class ValuesResistorFragment : Fragment() {
     // TODO: Rename and change types of parameters
@@ -44,5 +50,25 @@ class ValuesResistorFragment : Fragment() {
         botRes1_2.setBackgroundColor(Color.parseColor("#010101"))
         botRes2_2.setBackgroundColor(Color.parseColor("#010101"))
         botRes3_2.setBackgroundColor(Color.parseColor("#010101"))
+
+        val lista= resources.getStringArray(R.array.values_array)
+        val adaptador= ArrayAdapter(context!!, android.R.layout.simple_spinner_item, lista)
+        spinner.adapter= adaptador
+
+        spinner.onItemSelectedListener= object: AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                val eder= spinner.getItemAtPosition(spinner.selectedItemPosition).toString()
+                Log.d(TAG, "Item seleccionado: $eder")
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+        }
+
+        //val eder= spinner.getItemAtPosition(spinner.selectedItemPosition).toString()
+        //Log.d(TAG, "Item seleccionado: $eder")
+
+
     }
 }
