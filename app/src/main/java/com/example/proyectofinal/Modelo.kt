@@ -11,4 +11,6 @@ class Modelo {
     val terceraBandaValor= arrayOf<Float>(1F, 10F, 100F, 1000F, 10000F, 100000F, 1000000F, 10000000F, 100000000F, 1000000000F, 0.1F, 0.01F)
     //Negro, Cafe, Rojo, Naranja, Amarillo, Verde, Azul claro, Morado/Violeta, Gris, Blanco, Amarillo caca, gris claro: #CDCDCD
     //Esta se multiplica por las 2 bandas anteriores.
+
+    //Implementar arreglo en la que estén los colores de las bandas para poder mostrar los colores acorde al valor seleccionado
 }

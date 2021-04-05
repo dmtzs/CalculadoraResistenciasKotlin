@@ -8,6 +8,7 @@
     <string name="temp">temp</string>
 
     <string-array name="values_array">
+        <item>----</item>
         <item>1 Ω</item>
         <item>1.2 Ω</item>
         <item>1.5 Ω</item>

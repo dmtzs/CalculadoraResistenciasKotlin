@@ -1,6 +1,5 @@
 package com.example.proyectofinal.fragments
 
-import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -10,7 +9,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Toast
 import com.example.proyectofinal.R
 import kotlinx.android.synthetic.main.fragment_values_resistor.*
 
