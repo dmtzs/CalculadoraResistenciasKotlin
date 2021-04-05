@@ -7,4 +7,16 @@
     <string name="TextValueResistor">Insert the value you wish and unit for calculate the color bands of the resistor</string>
     <string name="CampoVacio"></string>
     <string name="temp">temp</string>
+
+    <string-array name="values_array">
+        <item>1k</item>
+        <item>220</item>
+        <item>222</item>
+        <item>456</item>
+        <item>789</item>
+        <item>789</item>
+        <item>965</item>
+        <item>354</item>
+    </string-array>
+    <!--Crear etiquetas string para cada uno de los elementos que vaz a tener mi lista para mostrar los colores correspondientes-->
 </resources>
