@@ -118,19 +118,19 @@ class ColorResistorFragment : Fragment() {
         {
             val aux= resultadoFinal
             cade= "%.1f".format(aux)//Ya lo convierte a cadena
-            cade+= " ohms"
+            cade+= " Ω"
         }
         else if (resultadoFinal>=1000 && resultadoFinal<1000000)
         {
             val aux= resultadoFinal/1000F
             cade= "%.1f".format(aux)
-            cade+= " Kohms"
+            cade+= " KΩ"
         }
         else if (resultadoFinal>=1000000)
         {
             val aux= resultadoFinal/1000000F
             cade= "%.1f".format(aux)
-            cade+= " Mohms"
+            cade+= " MΩ"
         }
         return cade
     }
