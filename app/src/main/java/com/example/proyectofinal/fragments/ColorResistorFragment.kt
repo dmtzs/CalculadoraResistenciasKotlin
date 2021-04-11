@@ -1,5 +1,6 @@
 package com.example.proyectofinal.fragments
 
+import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -37,16 +38,19 @@ class ColorResistorFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_color_resistor, container, false)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         var bande1= 0
         var bande2= 0
         var bande3= 0
-        val resuls = arrayOf<Float>(0F, 0F, 1F)//banda1, banda2, banda3
+        var bandeTole= 0
+        val resuls = arrayOf<Float>(0F, 0F, 1F, 1.0F)//banda1, banda2, banda3
         super.onViewCreated(view, savedInstanceState)
         botResis1.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande1]))
         botResis2.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande2]))
         botResis3.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande3]))
-        resultado.text= calculosValores(resuls).toString()
+        tole.setBackgroundColor(Color.parseColor(mod.tolerancias[bandeTole]))
+        resultado.text= calculosValores(resuls).toString()+" Ω ±${mod.toleranciasValores[bandeTole]}%"
 
         botResis1.setOnClickListener{
             if (bande1== 9)
@@ -54,7 +58,7 @@ class ColorResistorFragment : Fragment() {
                 bande1= 0
                 botResis1.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande1]))
                 resuls[0]= mod.primeraBandaValores[bande1]
-                resultado.text= unidades(calculosValores(resuls))
+                resultado.text= unidades(calculosValores(resuls), resuls[3])
                 //Log.d(TAG, "Resul multiplicacion $final")
             }
             else
@@ -62,7 +66,7 @@ class ColorResistorFragment : Fragment() {
                 bande1+= 1
                 botResis1.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande1]))
                 resuls[0]= mod.primeraBandaValores[bande1]
-                resultado.text= unidades(calculosValores(resuls))
+                resultado.text= unidades(calculosValores(resuls), resuls[3])
                 //Log.d(TAG, "Resul multiplicacion $final")
             }
         }
@@ -73,14 +77,14 @@ class ColorResistorFragment : Fragment() {
                 bande2= 0
                 botResis2.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande2]))
                 resuls[1]= mod.segundaBandaValores[bande2]
-                resultado.text= unidades(calculosValores(resuls))
+                resultado.text= unidades(calculosValores(resuls), resuls[3])
             }
             else
             {
                 bande2+= 1
                 botResis2.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande2]))
                 resuls[1]= mod.segundaBandaValores[bande2]
-                resultado.text= unidades(calculosValores(resuls))
+                resultado.text= unidades(calculosValores(resuls), resuls[3])
             }
         }
 
@@ -90,14 +94,31 @@ class ColorResistorFragment : Fragment() {
                 bande3= 0
                 botResis3.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande3]))
                 resuls[2]= mod.terceraBandaValor[bande3]
-                resultado.text= unidades(calculosValores(resuls))
+                resultado.text= unidades(calculosValores(resuls), resuls[3])
             }
             else
             {
                 bande3+= 1
                 botResis3.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande3]))
                 resuls[2]= mod.terceraBandaValor[bande3]
-                resultado.text= unidades(calculosValores(resuls))
+                resultado.text= unidades(calculosValores(resuls), resuls[3])
+            }
+        }
+
+        tole.setOnClickListener {
+            if (bandeTole== 8)
+            {
+                bandeTole= 0
+                tole.setBackgroundColor(Color.parseColor(mod.tolerancias[bandeTole]))
+                resuls[3]= mod.toleranciasValores[bandeTole]
+                resultado.text= unidades(calculosValores(resuls), resuls[3])
+            }
+            else
+            {
+                bandeTole+= 1
+                tole.setBackgroundColor(Color.parseColor(mod.tolerancias[bandeTole]))
+                resuls[3]= mod.toleranciasValores[bandeTole]
+                resultado.text= unidades(calculosValores(resuls), resuls[3])
             }
         }
     }
@@ -110,26 +131,26 @@ class ColorResistorFragment : Fragment() {
         return final
     }
 
-    fun unidades(resultadoFinal: Float): String
+    fun unidades(resultadoFinal: Float, tolerancia: Float): String
     {
         var cade= ""
         if (resultadoFinal<1000)
         {
             val aux= resultadoFinal
             cade= "%.1f".format(aux)//Ya lo convierte a cadena
-            cade+= " Ω"
+            cade+= " Ω ±$tolerancia%"
         }
         else if (resultadoFinal>=1000 && resultadoFinal<1000000)
         {
             val aux= resultadoFinal/1000F
             cade= "%.1f".format(aux)
-            cade+= " KΩ"
+            cade+= " KΩ ±$tolerancia%"
         }
         else if (resultadoFinal>=1000000)
         {
             val aux= resultadoFinal/1000000F
             cade= "%.1f".format(aux)
-            cade+= " MΩ"
+            cade+= " MΩ ±$tolerancia%"
         }
         return cade
     }

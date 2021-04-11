@@ -7,7 +7,7 @@
     <string name="CampoVacio"> </string>
     <string name="temp">temp</string>
 
-    <string-array name="values_array">
+    <string-array name="values_resis">
         <item>----</item>
         <item>1 Ω</item>
         <item>1.2 Ω</item>
@@ -102,5 +102,16 @@
         <item>8.2 MΩ</item>
         <item>10 MΩ</item>
     </string-array>
-    <!--Crear etiquetas string para cada uno de los elementos que vaz a tener mi lista para mostrar los colores correspondientes-->
+
+    <string-array name="values_toles">
+        <item>1%</item>
+        <item>2%</item>
+        <item>4%</item>
+        <item>0.5%</item>
+        <item>0.25%</item>
+        <item>0.10%</item>
+        <item>0.05%</item>
+        <item>5%</item>
+        <item>10%</item>
+    </string-array>
 </resources>

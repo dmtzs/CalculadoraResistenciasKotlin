@@ -12,7 +12,7 @@
         android:layout_height="150dp"
         android:layout_marginBottom="120dp"
         android:contentDescription="@string/ResistorImage"
-        android:src="@drawable/resis4Bandasbue"
+        android:src="@drawable/resis4bandasbue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,14 +89,28 @@
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="200dp"
         android:layout_marginBottom="480dp"
+        android:entries="@array/values_resis"
         app:layout_constraintBottom_toTopOf="@+id/textViewValues"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:entries="@array/values_array" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerTole"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="480dp"
+        android:entries="@array/values_toles"
+        app:layout_constraintBottom_toTopOf="@+id/textViewValues"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
