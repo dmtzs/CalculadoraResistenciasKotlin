@@ -48,6 +48,7 @@ class ValuesResistorFragment : Fragment() {
         botRes1_2.setBackgroundColor(Color.parseColor("#010101"))
         botRes2_2.setBackgroundColor(Color.parseColor("#010101"))
         botRes3_2.setBackgroundColor(Color.parseColor("#010101"))
+        tole2.setBackgroundColor(Color.parseColor("#551E12"))
 
         val lista= resources.getStringArray(R.array.values_resis)
         val adaptador= ArrayAdapter(context!!, android.R.layout.simple_spinner_item, lista)

@@ -9,7 +9,7 @@
 
     <string-array name="values_resis">
         <item>----</item>
-        <item>1 Ω</item>
+        <item>1.0 Ω</item>
         <item>1.2 Ω</item>
         <item>1.5 Ω</item>
         <item>1.8 Ω</item>
@@ -22,33 +22,33 @@
         <item>5.6 Ω</item>
         <item>6.8 Ω</item>
         <item>8.2 Ω</item>
-        <item>10 Ω</item>
-        <item>12 Ω</item>
-        <item>15 Ω</item>
-        <item>18 Ω</item>
-        <item>22 Ω</item>
-        <item>27 Ω</item>
-        <item>33 Ω</item>
-        <item>39 Ω</item>
-        <item>47 Ω</item>
-        <item>51 Ω</item>
-        <item>56 Ω</item>
-        <item>68 Ω</item>
-        <item>82 Ω</item>
-        <item>100 Ω</item>
-        <item>120 Ω</item>
-        <item>150 Ω</item>
-        <item>180 Ω</item>
-        <item>220 Ω</item>
-        <item>270 Ω</item>
-        <item>330 Ω</item>
-        <item>390 Ω</item>
-        <item>470 Ω</item>
-        <item>510 Ω</item>
-        <item>560 Ω</item>
-        <item>680 Ω</item>
-        <item>820 Ω</item>
-        <item>1 KΩ</item>
+        <item>10.0 Ω</item>
+        <item>12.0 Ω</item>
+        <item>15.0 Ω</item>
+        <item>18.0 Ω</item>
+        <item>22.0 Ω</item>
+        <item>27.0 Ω</item>
+        <item>33.0 Ω</item>
+        <item>39.0 Ω</item>
+        <item>47.0 Ω</item>
+        <item>51.0 Ω</item>
+        <item>56.0 Ω</item>
+        <item>68.0 Ω</item>
+        <item>82.0 Ω</item>
+        <item>100.0 Ω</item>
+        <item>120.0 Ω</item>
+        <item>150.0 Ω</item>
+        <item>180.0 Ω</item>
+        <item>220.0 Ω</item>
+        <item>270.0 Ω</item>
+        <item>330.0 Ω</item>
+        <item>390.0 Ω</item>
+        <item>470.0 Ω</item>
+        <item>510.0 Ω</item>
+        <item>560.0 Ω</item>
+        <item>680.0 Ω</item>
+        <item>820.0 Ω</item>
+        <item>1.0 KΩ</item>
         <item>1.2 KΩ</item>
         <item>1.5 KΩ</item>
         <item>1.8 KΩ</item>
@@ -61,33 +61,33 @@
         <item>5.6 KΩ</item>
         <item>6.8 KΩ</item>
         <item>8.2 KΩ</item>
-        <item>10 KΩ</item>
-        <item>12 KΩ</item>
-        <item>15 KΩ</item>
-        <item>18 KΩ</item>
-        <item>22 KΩ</item>
-        <item>27 KΩ</item>
-        <item>33 KΩ</item>
-        <item>39 KΩ</item>
-        <item>47 KΩ</item>
-        <item>51 KΩ</item>
-        <item>56 KΩ</item>
-        <item>68 KΩ</item>
-        <item>82 KΩ</item>
-        <item>100 KΩ</item>
-        <item>120 KΩ</item>
-        <item>150 KΩ</item>
-        <item>180 KΩ</item>
-        <item>220 KΩ</item>
-        <item>270 KΩ</item>
-        <item>330 KΩ</item>
-        <item>390 KΩ</item>
-        <item>470 KΩ</item>
-        <item>510 KΩ</item>
-        <item>560 KΩ</item>
-        <item>680 KΩ</item>
-        <item>820 KΩ</item>
-        <item>1 MΩ</item>
+        <item>10.0 KΩ</item>
+        <item>12.0 KΩ</item>
+        <item>15.0 KΩ</item>
+        <item>18.0 KΩ</item>
+        <item>22.0 KΩ</item>
+        <item>27.0 KΩ</item>
+        <item>33.0 KΩ</item>
+        <item>39.0 KΩ</item>
+        <item>47.0 KΩ</item>
+        <item>51.0 KΩ</item>
+        <item>56.0 KΩ</item>
+        <item>68.0 KΩ</item>
+        <item>82.0 KΩ</item>
+        <item>100.0 KΩ</item>
+        <item>120.0 KΩ</item>
+        <item>150.0 KΩ</item>
+        <item>180.0 KΩ</item>
+        <item>220.0 KΩ</item>
+        <item>270.0 KΩ</item>
+        <item>330.0 KΩ</item>
+        <item>390.0 KΩ</item>
+        <item>470.0 KΩ</item>
+        <item>510.0 KΩ</item>
+        <item>560.0 KΩ</item>
+        <item>680.0 KΩ</item>
+        <item>820.0 KΩ</item>
+        <item>1.0 MΩ</item>
         <item>1.2 MΩ</item>
         <item>1.5 MΩ</item>
         <item>1.8 MΩ</item>
@@ -100,7 +100,7 @@
         <item>5.6 MΩ</item>
         <item>6.8 MΩ</item>
         <item>8.2 MΩ</item>
-        <item>10 MΩ</item>
+        <item>10.0 MΩ</item>
     </string-array>
 
     <string-array name="values_toles">
