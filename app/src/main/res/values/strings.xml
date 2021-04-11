@@ -104,14 +104,14 @@
     </string-array>
 
     <string-array name="values_toles">
-        <item>1%</item>
-        <item>2%</item>
-        <item>4%</item>
-        <item>0.5%</item>
-        <item>0.25%</item>
-        <item>0.10%</item>
-        <item>0.05%</item>
-        <item>5%</item>
-        <item>10%</item>
+        <item>±1%</item>
+        <item>±2%</item>
+        <item>±4%</item>
+        <item>±0.5%</item>
+        <item>±0.25%</item>
+        <item>±0.10%</item>
+        <item>±0.05%</item>
+        <item>±5%</item>
+        <item>±10%</item>
     </string-array>
 </resources>

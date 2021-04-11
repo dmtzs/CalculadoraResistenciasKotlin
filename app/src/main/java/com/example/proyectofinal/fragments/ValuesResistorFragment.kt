@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import com.example.proyectofinal.Modelo
 import com.example.proyectofinal.R
 import kotlinx.android.synthetic.main.fragment_values_resistor.*
 
@@ -22,6 +23,7 @@ class ValuesResistorFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private val mod= Modelo()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,11 +46,12 @@ class ValuesResistorFragment : Fragment() {
         botRes1_2.isEnabled= false
         botRes2_2.isEnabled= false
         botRes3_2.isEnabled= false
+        tole2.isEnabled= false
 
         botRes1_2.setBackgroundColor(Color.parseColor("#010101"))
         botRes2_2.setBackgroundColor(Color.parseColor("#010101"))
         botRes3_2.setBackgroundColor(Color.parseColor("#010101"))
-        tole2.setBackgroundColor(Color.parseColor("#551E12"))
+        //tole2.setBackgroundColor(Color.parseColor("#551E12"))
 
         val lista= resources.getStringArray(R.array.values_resis)
         val adaptador= ArrayAdapter(context!!, android.R.layout.simple_spinner_item, lista)
@@ -60,6 +63,19 @@ class ValuesResistorFragment : Fragment() {
                 Log.d(TAG, "Item seleccionado: $eder")
             }
 
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+        }
+
+        spinnerTole.onItemSelectedListener= object: AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                val posTole= spinnerTole.selectedItemPosition
+                tole2.setBackgroundColor(Color.parseColor(mod.tolerancias[posTole]))
+                Log.d(TAG, "Posición seleccionada: $posTole")
+
+                //val eder2= spinnerTole.getItemAtPosition(spinnerTole.selectedItemPosition).toString()
+            }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 TODO("Not yet implemented")
             }
