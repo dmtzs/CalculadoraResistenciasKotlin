@@ -7,8 +7,48 @@
     <string name="CampoVacio"> </string>
     <string name="temp">temp</string>
 
+    <string-array name="values_toles">
+        <item>±1%</item>
+        <item>±2%</item>
+        <item>±4%</item>
+        <item>±0.5%</item>
+        <item>±0.25%</item>
+        <item>±0.10%</item>
+        <item>±0.05%</item>
+        <item>±5%</item>
+        <item>±10%</item>
+    </string-array>
+    
+    <string-array name="multiplicador">
+        <item>x1</item>
+        <item>x10</item>
+        <item>x100</item>
+        <item>x1000</item>
+        <item>x10,000</item>
+        <item>x100,000</item>
+        <item>x1,000,000</item>
+        <item>x10,000,000</item>
+    </string-array>
+
+    <string-array name="valores_definitivo">
+        <item>---</item>
+        <item>1.0 Ω</item>
+        <item>1.2 Ω</item>
+        <item>1.5 Ω</item>
+        <item>1.8 Ω</item>
+        <item>2.2 Ω</item>
+        <item>2.7 Ω</item>
+        <item>3.3 Ω</item>
+        <item>3.9 Ω</item>
+        <item>4.7 Ω</item>
+        <item>5.1 Ω</item>
+        <item>5.6 Ω</item>
+        <item>6.8 Ω</item>
+        <item>8.2 Ω</item>
+    </string-array>
+
     <string-array name="values_resis">
-        <item>----</item>
+        <item>---</item>
         <item>1.0 Ω</item>
         <item>1.2 Ω</item>
         <item>1.5 Ω</item>
@@ -101,17 +141,5 @@
         <item>6.8 MΩ</item>
         <item>8.2 MΩ</item>
         <item>10.0 MΩ</item>
-    </string-array>
-
-    <string-array name="values_toles">
-        <item>±1%</item>
-        <item>±2%</item>
-        <item>±4%</item>
-        <item>±0.5%</item>
-        <item>±0.25%</item>
-        <item>±0.10%</item>
-        <item>±0.05%</item>
-        <item>±5%</item>
-        <item>±10%</item>
     </string-array>
 </resources>

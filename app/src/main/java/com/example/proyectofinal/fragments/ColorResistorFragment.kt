@@ -46,7 +46,7 @@ class ColorResistorFragment : Fragment() {
         var bande3= 0
         var bandeTole= 0
         var valorResisFinal: String
-        val resuls = arrayOf<Float>(0F, 0F, 1F, 1.0F)//banda1, banda2, banda3
+        val resuls = arrayOf<Float>(0F, 0F, 1F, 1.0F)//banda1, banda2, banda3, banda4
         val lista= resources.getStringArray(R.array.values_resis)//Obtener los valores de las resistencias desde mi string array
         Log.d(TAG, "Arre: ${lista[14]}")
         super.onViewCreated(view, savedInstanceState)

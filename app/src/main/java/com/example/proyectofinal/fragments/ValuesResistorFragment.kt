@@ -47,37 +47,51 @@ class ValuesResistorFragment : Fragment() {
         botRes2_2.isEnabled= false
         botRes3_2.isEnabled= false
         tole2.isEnabled= false
+        val resuls = arrayOf<Float>(0F, 0F, 1F, 1.0F)//banda1, banda2, banda3, banda4
 
         botRes1_2.setBackgroundColor(Color.parseColor("#010101"))
         botRes2_2.setBackgroundColor(Color.parseColor("#010101"))
         botRes3_2.setBackgroundColor(Color.parseColor("#010101"))
         //tole2.setBackgroundColor(Color.parseColor("#551E12"))
 
-        val lista= resources.getStringArray(R.array.values_resis)
+        val lista= resources.getStringArray(R.array.valores_definitivo)
         val adaptador= ArrayAdapter(context!!, android.R.layout.simple_spinner_item, lista)
         spinner.adapter= adaptador
 
         spinner.onItemSelectedListener= object: AdapterView.OnItemSelectedListener{
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val eder= spinner.getItemAtPosition(spinner.selectedItemPosition).toString()
+                val eder2= eder.split(" ")
                 Log.d(TAG, "Item seleccionado: $eder")
+                Log.d(TAG, "Item seleccionado filtrado: $eder2")
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
+                TODO("Not neccesary")
             }
         }
+        //----------------------------------------------------------------------------------------
 
         spinnerTole.onItemSelectedListener= object: AdapterView.OnItemSelectedListener{
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val posTole= spinnerTole.selectedItemPosition
                 tole2.setBackgroundColor(Color.parseColor(mod.tolerancias[posTole]))
-                Log.d(TAG, "Posición seleccionada: $posTole")
-
-                //val eder2= spinnerTole.getItemAtPosition(spinnerTole.selectedItemPosition).toString()
+                Log.d(TAG, "Posición seleccionada tole: $posTole")
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
+                TODO("Not neccesary")
+            }
+        }
+
+        spinner2.onItemSelectedListener= object: AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                val posMulti= spinner2.selectedItemPosition
+                botRes3_2.setBackgroundColor(Color.parseColor(mod.coloresBandas[posMulti]))
+                Log.d(TAG, "Posición seleccionada multi: $posMulti")
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not neccesary")
             }
         }
 
