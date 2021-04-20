@@ -46,7 +46,7 @@ class ColorResistorFragment : Fragment() {
         var bande3= 0
         var bandeTole= 0
         var valorResisFinal: String
-        val resuls = arrayOf<Float>(0F, 0F, 1F, 1.0F)//banda1, banda2, banda3, banda4
+        val resuls = arrayOf(0F, 0F, 1F, 1.0F)//banda1, banda2, banda3, banda4
         val lista= resources.getStringArray(R.array.values_resis)//Obtener los valores de las resistencias desde mi string array
         Log.d(TAG, "Arre: ${lista[14]}")
         super.onViewCreated(view, savedInstanceState)
@@ -157,8 +157,7 @@ class ColorResistorFragment : Fragment() {
         var cade= ""
         if (resultadoFinal<1000)
         {
-            val aux= resultadoFinal
-            cade= "%.1f".format(aux)//Ya lo convierte a cadena
+            cade= "%.1f".format(resultadoFinal)//Ya lo convierte a cadena
             cade+= " Ω ±$tolerancia%"
         }
         else if (resultadoFinal>=1000 && resultadoFinal<1000000)
@@ -182,15 +181,15 @@ class ColorResistorFragment : Fragment() {
         var aux2= aux[0]
         aux2= aux2.dropLast(1)//Elimino el último espacio de mi cadena.
 
-        if (aux2 in arre)
+        return if (aux2 in arre)
         {
             val nueCade= "Este valor existe comercialmente"
-            return nueCade
+            nueCade
         }
         else
         {
             val nueCade= "Este valor no existe comercialmente"
-            return nueCade
+            nueCade
         }
         /*Log.d(TAG, "$nueCade")
         Log.d(TAG, "$aux2")*/

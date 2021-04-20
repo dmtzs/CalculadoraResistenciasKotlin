@@ -47,7 +47,7 @@ class ValuesResistorFragment : Fragment() {
         botRes2_2.isEnabled= false
         botRes3_2.isEnabled= false
         tole2.isEnabled= false
-        val resuls = arrayOf<String>("1.0", "Ω", "±1%", "1")//valor, multiplicador unidad, tolerancia y multiplicador valor.
+        val resuls = arrayOf("1.0", "Ω", "±1%", "1")//valor, multiplicador unidad, tolerancia y multiplicador valor.
 
         val lista= resources.getStringArray(R.array.valores_definitivo)
         val adaptador= ArrayAdapter(context!!, android.R.layout.simple_spinner_item, lista)
@@ -65,7 +65,7 @@ class ValuesResistorFragment : Fragment() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not neccesary")
+                //No necesario
             }
         }
         //----------------------------------------------------------------------------------------
@@ -79,7 +79,7 @@ class ValuesResistorFragment : Fragment() {
                 valorReal.text= calcularCadenaReal(resuls)
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not neccesary")
+                //No necesario
             }
         }
 
@@ -91,7 +91,7 @@ class ValuesResistorFragment : Fragment() {
                 val eder2= eder.split(" ")
                 val eder3= eder2[0].replace("x", "")
                 Log.d(TAG, "Después de espacios: ${eder2[1]}")
-                Log.d(TAG, "Item seleccionado final: ${eder3}")
+                Log.d(TAG, "Item seleccionado final: $eder3")
 
                 resuls[1]= eder2[1]
                 resuls[3]= eder3
@@ -101,7 +101,7 @@ class ValuesResistorFragment : Fragment() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not neccesary")
+                //No necesario
             }
         }
     }
