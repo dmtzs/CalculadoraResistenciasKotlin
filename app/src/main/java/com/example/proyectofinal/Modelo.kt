@@ -16,6 +16,11 @@ class Modelo {
     //Primeras 2 bandas se suman nada mas mutuamente, para estos valores la secuancia de colores es la misma que la del primer arreglo
 
     val terceraBandaValor= arrayOf<Float>(1F, 10F, 100F, 1000F, 10000F, 100000F, 1000000F, 10000000F, 100000000F, 1000000000F, 0.1F, 0.01F)
-    //Negro, Cafe, Rojo, Naranja, Amarillo, Verde, Azul claro, Morado/Violeta, Gris, Blanco, Amarillo caca, gris claro: #CDCDCD
+    //Negro, Cafe, Rojo, Naranja, Amarillo, Verde, Azul claro, Morado/Violeta, Gris, Blanco, Amarillo opaco, gris claro: #CDCDCD
     //Esta se multiplica por las 2 bandas anteriores.
+
+    val colores13Valores= arrayOf<String>("#551E12,#010101", "#551E12,#FB0000", "#551E12,#5FE506", "#551E12,#CDCDCD", "#FB0000,#FB0000", "#FB0000,#A524E2", "#FF8000,#FF8000", "#FF8000,#F4F4F4", "#FFFF00,#A524E2", "#5FE506,#551E12", "#5FE506,#13ECF1", "#13ECF1,#828282", "#828282,#FB0000")
+    //café y negro, café y rojo, café y verde, café y gris claro, rojo y rojo, rojo y morado/violeta, naranja y naranja, naranja y blanco, amarillo y morado/violeta, verde y café, verde y azul claro, azul claro y gris, gris y rojo.
+    val coloresValores2Opcion= arrayOf<String>("#FFCD48", "#010101", "#551E12", "#FB0000", "#FF8000", "#FFFF00", "#5FE506", "#13ECF1")
+    //Amarillo opaco, Negro, Café, Rojo, Naranja, Amarillo, Verde, Azul claro
 }

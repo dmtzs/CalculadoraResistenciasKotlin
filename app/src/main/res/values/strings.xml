@@ -20,31 +20,30 @@
     </string-array>
     
     <string-array name="multiplicador">
-        <item>x1</item>
-        <item>x10</item>
-        <item>x100</item>
-        <item>x1000</item>
-        <item>x10,000</item>
-        <item>x100,000</item>
-        <item>x1,000,000</item>
-        <item>x10,000,000</item>
+        <item>x1 Ω</item>
+        <item>x10 Ω</item>
+        <item>x100 Ω</item>
+        <item>x1 kΩ</item>
+        <item>x10 kΩ</item>
+        <item>x100 kΩ</item>
+        <item>x1 MΩ</item>
+        <item>x10 MΩ</item>
     </string-array>
 
     <string-array name="valores_definitivo">
-        <item>---</item>
-        <item>1.0 Ω</item>
-        <item>1.2 Ω</item>
-        <item>1.5 Ω</item>
-        <item>1.8 Ω</item>
-        <item>2.2 Ω</item>
-        <item>2.7 Ω</item>
-        <item>3.3 Ω</item>
-        <item>3.9 Ω</item>
-        <item>4.7 Ω</item>
-        <item>5.1 Ω</item>
-        <item>5.6 Ω</item>
-        <item>6.8 Ω</item>
-        <item>8.2 Ω</item>
+        <item>1.0</item>
+        <item>1.2</item>
+        <item>1.5</item>
+        <item>1.8</item>
+        <item>2.2</item>
+        <item>2.7</item>
+        <item>3.3</item>
+        <item>3.9</item>
+        <item>4.7</item>
+        <item>5.1</item>
+        <item>5.6</item>
+        <item>6.8</item>
+        <item>8.2</item>
     </string-array>
 
     <string-array name="values_resis">
