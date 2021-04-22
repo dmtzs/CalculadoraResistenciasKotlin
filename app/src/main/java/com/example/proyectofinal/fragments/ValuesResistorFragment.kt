@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import androidx.appcompat.app.AppCompatActivity
 import com.example.proyectofinal.Modelo
 import com.example.proyectofinal.R
 import kotlinx.android.synthetic.main.fragment_values_resistor.*
@@ -31,6 +32,12 @@ class ValuesResistorFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        val appCompatActivity = activity as AppCompatActivity
+        appCompatActivity.supportActionBar?.setTitle(R.string.app_name)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
