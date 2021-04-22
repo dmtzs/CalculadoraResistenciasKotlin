@@ -8,7 +8,7 @@
 
     <ImageView
         android:id="@+id/imageViewColors"
-        android:layout_width="300dp"
+        android:layout_width="400dp"
         android:layout_height="150dp"
         android:layout_marginBottom="300dp"
         android:contentDescription="@string/ResistorImage"
@@ -34,8 +34,8 @@
 
     <Button
         android:id="@+id/botResis3"
-        android:layout_width="13dp"
-        android:layout_height="53dp"
+        android:layout_width="17dp"
+        android:layout_height="68dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="30dp"
@@ -48,10 +48,10 @@
 
     <Button
         android:id="@+id/botResis2"
-        android:layout_width="13dp"
-        android:layout_height="53dp"
+        android:layout_width="17dp"
+        android:layout_height="68dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="35dp"
+        android:layout_marginEnd="47dp"
         android:layout_marginBottom="304dp"
         android:text="@string/CampoVacio"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -61,10 +61,10 @@
 
     <Button
         android:id="@+id/botResis1"
-        android:layout_width="13dp"
-        android:layout_height="53dp"
+        android:layout_width="17dp"
+        android:layout_height="68dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="75dp"
+        android:layout_marginEnd="102dp"
         android:layout_marginBottom="304dp"
         android:text="@string/CampoVacio"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,9 +74,9 @@
 
     <Button
         android:id="@+id/tole"
-        android:layout_width="13dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="75dp"
+        android:layout_width="17dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="96dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="304dp"
         android:text="@string/CampoVacio"
