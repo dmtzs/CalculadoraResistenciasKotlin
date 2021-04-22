@@ -99,7 +99,7 @@
 
     <TextView
         android:id="@+id/comer"
-        android:layout_width="200dp"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="200dp"
         android:text="@string/temp"
