@@ -42,7 +42,7 @@ class ValuesResistorFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
+        // Inflar el layout para este fragmento.
         return inflater.inflate(R.layout.fragment_values_resistor, container, false)
     }
 
@@ -121,6 +121,6 @@ class ValuesResistorFragment : Fragment() {
 
         val otroResul= valor * multiValor
 
-        return "$otroResul${resuls[1]} ${resuls[2]}"
+        return "$otroResul ${resuls[1]} ${resuls[2]}"
     }
 }

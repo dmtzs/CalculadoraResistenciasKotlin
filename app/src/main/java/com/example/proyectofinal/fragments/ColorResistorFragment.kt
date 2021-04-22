@@ -12,7 +12,7 @@ import com.example.proyectofinal.Modelo
 import com.example.proyectofinal.R
 import kotlinx.android.synthetic.main.fragment_color_resistor.*
 
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+//Inicialización de los parámetros del fragmento.
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 private const val TAG="Resistor"
@@ -21,7 +21,7 @@ class ColorResistorFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    private val mod= Modelo()//Instancio mi clase de modelo
+    private val mod= Modelo()//Instancio mi clase de modelo.
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +35,7 @@ class ColorResistorFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+        // Inflar el layout para este fragmento.
         return inflater.inflate(R.layout.fragment_color_resistor, container, false)
     }
 
@@ -46,13 +46,24 @@ class ColorResistorFragment : Fragment() {
         var bande3= 0
         var bandeTole= 0
         var valorResisFinal: String
-        val resuls = arrayOf(0F, 0F, 1F, 1.0F)//banda1, banda2, banda3, banda4
-        val lista= resources.getStringArray(R.array.values_resis)//Obtener los valores de las resistencias desde mi string array
+        val resuls = arrayOf(0F, 0F, 1F, 1.0F)//banda1, banda2, banda3, banda4.
+        val lista= resources.getStringArray(R.array.values_resis)//Obtener los valores de las 91 resistencias desde mi string array.
         Log.d(TAG, "Arre: ${lista[14]}")
         super.onViewCreated(view, savedInstanceState)
         botResis1.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande1]))
         botResis2.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande2]))
         botResis3.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande3]))
+
+        indice1.text= "1"
+        indice2.text= "2"
+        indice3.text= "3"
+        indice4.text= "4"
+
+        indice1_2.text= "1"
+        indice2_2.text= "2"
+        indice3_2.text= "3"
+        indice4_2.text= "4"
+
         tole.setBackgroundColor(Color.parseColor(mod.tolerancias[bandeTole]))
         resultado.text= calculosValores(resuls).toString()+" Ω ±${mod.toleranciasValores[bandeTole]}%"
         comer.text= ""
@@ -119,6 +130,7 @@ class ColorResistorFragment : Fragment() {
                 valorResisFinal= unidades(calculosValores(resuls), resuls[3])
                 resultado.text= valorResisFinal
                 comer.text= comercialsino(lista, valorResisFinal)
+
             }
         }
 
@@ -183,7 +195,7 @@ class ColorResistorFragment : Fragment() {
 
         return if (aux2 in arre)
         {
-            val nueCade= "Este valor existe comercialmente"
+            val nueCade= "Este valor existe comercialmente, verifica con tu proveedor el código de colores correcto de ser necesario"
             nueCade
         }
         else
@@ -191,7 +203,5 @@ class ColorResistorFragment : Fragment() {
             val nueCade= "Este valor no existe comercialmente"
             nueCade
         }
-        /*Log.d(TAG, "$nueCade")
-        Log.d(TAG, "$aux2")*/
     }
 }

@@ -9,6 +9,7 @@ class Modelo {
 
     val tolerancias= arrayOf("#551E12", "#FB0000", "#FFFF00", "#5FE506", "#13ECF1", "#A524E2", "#828282", "#FFCD48", "#CDCDCD")//Implementar cambio de colores en este último boton y el otro string array en el xml
     //Cafe, Rojo, Amarillo claro, Verde, Azul claro, Morado/Violeta, Gris, Amarillo opaco, gris claro
+
     val toleranciasValores= arrayOf(1.0F, 2.0F, 4.0F, 0.5F, 0.25F, 0.10F, 0.05F, 5.0F, 10.0F)
 
     val primeraBandaValores= arrayOf(0F, 10F, 20F, 30F, 40F, 50F, 60F, 70F, 80F, 90F)//ohms
@@ -21,6 +22,7 @@ class Modelo {
 
     val colores13Valores= arrayOf("#551E12,#010101", "#551E12,#FB0000", "#551E12,#5FE506", "#551E12,#CDCDCD", "#FB0000,#FB0000", "#FB0000,#A524E2", "#FF8000,#FF8000", "#FF8000,#F4F4F4", "#FFFF00,#A524E2", "#5FE506,#551E12", "#5FE506,#13ECF1", "#13ECF1,#828282", "#828282,#FB0000")
     //café y negro, café y rojo, café y verde, café y gris claro, rojo y rojo, rojo y morado/violeta, naranja y naranja, naranja y blanco, amarillo y morado/violeta, verde y café, verde y azul claro, azul claro y gris, gris y rojo.
+
     val coloresValores2Opcion= arrayOf("#FFCD48", "#010101", "#551E12", "#FB0000", "#FF8000", "#FFFF00", "#5FE506", "#13ECF1")
     //Amarillo opaco, Negro, Café, Rojo, Naranja, Amarillo, Verde, Azul claro
 }

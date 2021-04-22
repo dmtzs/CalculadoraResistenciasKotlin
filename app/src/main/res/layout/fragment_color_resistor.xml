@@ -10,13 +10,15 @@
         android:id="@+id/imageViewColors"
         android:layout_width="400dp"
         android:layout_height="150dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginBottom="200dp"
         android:contentDescription="@string/ResistorImage"
         android:src="@drawable/resis"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501" />
 
     <TextView
         android:id="@+id/textViewColor"
@@ -39,7 +41,7 @@
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="304dp"
+        android:layout_marginBottom="204dp"
         android:text="@string/CampoVacio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +54,7 @@
         android:layout_height="68dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="47dp"
-        android:layout_marginBottom="304dp"
+        android:layout_marginBottom="204dp"
         android:text="@string/CampoVacio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +67,7 @@
         android:layout_height="68dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="102dp"
-        android:layout_marginBottom="304dp"
+        android:layout_marginBottom="204dp"
         android:text="@string/CampoVacio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +80,7 @@
         android:layout_height="68dp"
         android:layout_marginStart="96dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="304dp"
+        android:layout_marginBottom="204dp"
         android:text="@string/CampoVacio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +91,7 @@
         android:id="@+id/resultado"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="300dp"
+        android:layout_marginBottom="80dp"
         android:text="@string/temp"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -101,12 +103,177 @@
         android:id="@+id/comer"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
         android:text="@string/temp"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewColors" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="290dp"
+        android:text="@string/anterior_label"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewColors" />
+
+    <Button
+        android:id="@+id/bola1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="230dp"
+        android:text="@string/CampoVacio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bola2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/CampoVacio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bola3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/CampoVacio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bola4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/CampoVacio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/indice1"
+        android:layout_width="17dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="300dp"
+        android:text="@string/CampoVacio"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/indice2"
+        android:layout_width="17dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="300dp"
+        android:text="@string/CampoVacio"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/indice3"
+        android:layout_width="17dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="300dp"
+        android:text="@string/CampoVacio"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/indice4"
+        android:layout_width="17dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginBottom="300dp"
+        android:text="@string/CampoVacio"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/indice1_2"
+        android:layout_width="17dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="230dp"
+        android:text="@string/CampoVacio"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/indice2_2"
+        android:layout_width="17dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/CampoVacio"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/indice3_2"
+        android:layout_width="17dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/CampoVacio"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/indice4_2"
+        android:layout_width="17dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/CampoVacio"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

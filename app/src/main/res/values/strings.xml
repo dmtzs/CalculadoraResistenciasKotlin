@@ -2,8 +2,9 @@
     <string name="app_name">Calculadora de resistencias</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ResistorImage">ResistorImage</string>
-    <string name="TextColorResistor">Presiona las bandas de la resistencia para cambiar su color y calcular su valor correspondiente. También muestra si el valor y los colores son comerciales</string>
+    <string name="TextColorResistor">Presiona las bandas de la resistencia para cambiar su color y calcular su valor correspondiente. Los indices se indican sobre cada banda y sobre el botón que regresa al color anterior</string>
     <string name="TextValueResistor">Selecciona el valor que deseas y después su multiplicacdor correspondiente para poder calcular su código de colores en las bandas de la resistencia</string>
+    <string name="anterior_label">Botones para regresar al color anterior correspondiente a la banda con el índice marcado arriba</string>
     <string name="CampoVacio"> </string>
     <string name="temp">temp</string>
     <string name="menu_bottom1">Colores</string>
