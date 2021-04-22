@@ -91,6 +91,28 @@ class ColorResistorFragment : Fragment() {
             }
         }
 
+        bola1.setOnClickListener {
+            if (bande1== 0)
+            {
+                bande1= 9
+                botResis1.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande1]))
+                resuls[0]= mod.primeraBandaValores[bande1]
+                valorResisFinal= unidades(calculosValores(resuls), resuls[3])
+                resultado.text= valorResisFinal
+                comer.text= comercialsino(lista, valorResisFinal)
+            }
+            else
+            {
+                bande1-= 1
+                botResis1.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande1]))
+                resuls[0]= mod.primeraBandaValores[bande1]
+                valorResisFinal= unidades(calculosValores(resuls), resuls[3])
+                resultado.text= valorResisFinal
+                comer.text= comercialsino(lista, valorResisFinal)
+                //Log.d(TAG, "Resul multiplicacion $final")
+            }
+        }
+
         botResis2.setOnClickListener{
             if (bande2== 9)
             {
@@ -104,6 +126,27 @@ class ColorResistorFragment : Fragment() {
             else
             {
                 bande2+= 1
+                botResis2.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande2]))
+                resuls[1]= mod.segundaBandaValores[bande2]
+                valorResisFinal= unidades(calculosValores(resuls), resuls[3])
+                resultado.text= valorResisFinal
+                comer.text= comercialsino(lista, valorResisFinal)
+            }
+        }
+
+        bola2.setOnClickListener {
+            if (bande2== 0)
+            {
+                bande2= 9
+                botResis2.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande2]))
+                resuls[1]= mod.segundaBandaValores[bande2]
+                valorResisFinal= unidades(calculosValores(resuls), resuls[3])
+                resultado.text= valorResisFinal
+                comer.text= comercialsino(lista, valorResisFinal)
+            }
+            else
+            {
+                bande2-= 1
                 botResis2.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande2]))
                 resuls[1]= mod.segundaBandaValores[bande2]
                 valorResisFinal= unidades(calculosValores(resuls), resuls[3])
@@ -134,6 +177,28 @@ class ColorResistorFragment : Fragment() {
             }
         }
 
+        bola3.setOnClickListener {
+            if (bande3== 0)
+            {
+                bande3= 11
+                botResis3.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande3]))
+                resuls[2]= mod.terceraBandaValor[bande3]
+                valorResisFinal= unidades(calculosValores(resuls), resuls[3])
+                resultado.text= valorResisFinal
+                comer.text= comercialsino(lista, valorResisFinal)
+            }
+            else
+            {
+                bande3-= 1
+                botResis3.setBackgroundColor(Color.parseColor(mod.coloresBandas[bande3]))
+                resuls[2]= mod.terceraBandaValor[bande3]
+                valorResisFinal= unidades(calculosValores(resuls), resuls[3])
+                resultado.text= valorResisFinal
+                comer.text= comercialsino(lista, valorResisFinal)
+
+            }
+        }
+
         tole.setOnClickListener {
             if (bandeTole== 8)
             {
@@ -147,6 +212,27 @@ class ColorResistorFragment : Fragment() {
             else
             {
                 bandeTole+= 1
+                tole.setBackgroundColor(Color.parseColor(mod.tolerancias[bandeTole]))
+                resuls[3]= mod.toleranciasValores[bandeTole]
+                valorResisFinal= unidades(calculosValores(resuls), resuls[3])
+                resultado.text= valorResisFinal
+                comer.text= comercialsino(lista, valorResisFinal)
+            }
+        }
+
+        bola4.setOnClickListener {
+            if (bandeTole== 0)
+            {
+                bandeTole= 8
+                tole.setBackgroundColor(Color.parseColor(mod.tolerancias[bandeTole]))
+                resuls[3]= mod.toleranciasValores[bandeTole]
+                valorResisFinal= unidades(calculosValores(resuls), resuls[3])
+                resultado.text= valorResisFinal
+                comer.text= comercialsino(lista, valorResisFinal)
+            }
+            else
+            {
+                bandeTole-= 1
                 tole.setBackgroundColor(Color.parseColor(mod.tolerancias[bandeTole]))
                 resuls[3]= mod.toleranciasValores[bandeTole]
                 valorResisFinal= unidades(calculosValores(resuls), resuls[3])
