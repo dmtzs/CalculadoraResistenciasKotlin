@@ -59,11 +59,6 @@ class ColorResistorFragment : Fragment() {
         indice3.text= "3"
         indice4.text= "4"
 
-        indice1_2.text= "1"
-        indice2_2.text= "2"
-        indice3_2.text= "3"
-        indice4_2.text= "4"
-
         tole.setBackgroundColor(Color.parseColor(mod.tolerancias[bandeTole]))
         resultado.text= calculosValores(resuls).toString()+" Ω ±${mod.toleranciasValores[bandeTole]}%"
         comer.text= ""
