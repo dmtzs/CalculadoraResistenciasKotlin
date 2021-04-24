@@ -55,6 +55,7 @@ class ValuesResistorFragment : Fragment() {
         botRes3_2.isEnabled= false
         tole2.isEnabled= false
         val resuls = arrayOf("1.0", "Ω", "±1%", "1")//valor, multiplicador unidad, tolerancia y multiplicador valor.
+        var resultado: String
 
         val lista= resources.getStringArray(R.array.valores_definitivo)
         val adaptador= ArrayAdapter(context!!, android.R.layout.simple_spinner_item, lista)
@@ -68,7 +69,9 @@ class ValuesResistorFragment : Fragment() {
                 botRes1_2.setBackgroundColor(Color.parseColor(ambosColores[0]))
                 botRes2_2.setBackgroundColor(Color.parseColor(ambosColores[1]))
                 Log.d(TAG, "Ambos colores: $ambosColores")
-                valorReal.text= calcularCadenaReal(resuls)
+                resultado= calcularCadenaReal(resuls)
+                valorReal.text= resultado
+                existencia.text= validarExistencia(resultado)
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -83,7 +86,9 @@ class ValuesResistorFragment : Fragment() {
                 resuls[2]= spinnerTole.getItemAtPosition(posTole).toString()
                 tole2.setBackgroundColor(Color.parseColor(mod.tolerancias[posTole]))
                 Log.d(TAG, "Posición seleccionada tole: $posTole")
-                valorReal.text= calcularCadenaReal(resuls)
+                resultado= calcularCadenaReal(resuls)
+                valorReal.text= resultado
+                existencia.text= validarExistencia(resultado)
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 //No necesario
@@ -104,7 +109,9 @@ class ValuesResistorFragment : Fragment() {
                 resuls[3]= eder3
                 botRes3_2.setBackgroundColor(Color.parseColor(mod.coloresValores2Opcion[posMulti]))
                 Log.d(TAG, "Posición seleccionada multi: $posMulti")
-                valorReal.text= calcularCadenaReal(resuls)
+                resultado= calcularCadenaReal(resuls)
+                valorReal.text= resultado
+                existencia.text= validarExistencia(resultado)
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -122,5 +129,21 @@ class ValuesResistorFragment : Fragment() {
         val otroResul= valor * multiValor
 
         return "$otroResul ${resuls[1]} ${resuls[2]}"
+    }
+
+    private fun validarExistencia(cadena: String): String {
+        Log.d(TAG, "Parametro recibido: $cadena")
+        val aux= cadena.split(" ")
+
+        return if (aux[1]== "MΩ" && aux[0].toFloat()> 10.0)
+        {
+            val nuecade= "El valor de esta resistencia no existe comercialmente"
+            nuecade
+        }
+        else
+        {
+            val nuecade= "El valor de esta resistencia existe comercialmente"
+            nuecade
+        }
     }
 }
