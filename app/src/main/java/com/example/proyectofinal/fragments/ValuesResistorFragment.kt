@@ -1,5 +1,9 @@
 package com.example.proyectofinal.fragments
 
+/*@Autor: Diego Martínez Sánchez
+* @Descripción: Fragmento en el cual se mostrará las opciones en las que el usuario podra seleccionar un valor inicial, un multiplicador y un valor de tolerancia para poder verificar el código de colores de una resistencia.
+*               De igual manera por cada opción que sale en los spinner y se seleccione, se cambia el código de colores e indica si el valor de la resistencia resultante existe comercialmente o no.*/
+
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -14,7 +18,6 @@ import com.example.proyectofinal.Modelo
 import com.example.proyectofinal.R
 import kotlinx.android.synthetic.main.fragment_values_resistor.*
 
-// TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"

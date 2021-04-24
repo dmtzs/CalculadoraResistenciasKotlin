@@ -1,5 +1,11 @@
 package com.example.proyectofinal.fragments
 
+/*@Autor: Diego Martínez Sánchez
+* @Descripción: Fragmento en el cual se mostrará una resistencia en la que se debe presionar sobre sus bandas para cambiar el color de la misma y posteriormente debajo de la misma se mostrará el valor de la resistencia a la que corresponde.
+*               Los botones denajo de las bandas como la leyenda que sale a la izquierda indica es para regresar al valor del color anterior en caso nos hayamos pasado de color.
+*               Al igual que el otro fragmento este indica si el valor de la resistencia existe o no y solo sería ver si el color de la resistencia existe o no aunque esto no es realmente necesario-
+*               ya que este fragmento está pensado para calcular el valor de la resistencia a través de su código de colores de cuya resistencia ya se tiene en mano físicamente hablando.*/
+
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
