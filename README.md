@@ -1,5 +1,5 @@
 <p align="center">
-  <!--img width="200" src="https://github.com/dmtzs/CalculadoraResistenciasKotlin/blob/master/abimg.png" alt="logo"-->
+  <img width="200" src="https://github.com/dmtzs/CalculadoraResistenciasKotlin/blob/master/resis_ico.png" alt="logo">
   <h1 align="center" style="margin: 0 auto 0 auto;">Electronical resistors calculator</h1>
   <h5 align="center" style="margin: 0 auto 0 auto;">Calculate and know commercial resistors</h5>
 </p>
